@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "TTLakes-Medium";
+    src:
+            url("fonts/TTLakes-Medium.woff") format("woff"),
+            url("fonts/TTLakes-Medium.eot") format("eot");
+}
+@font-face {
+    font-family: "TTLakes-Bold";
+    src:
+            url("/fonts/TTLakes-Bold.woff") format("woff"),
+            url("/fonts/TTLakes-Bold.eot") format("eot");
+}
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -51,6 +64,9 @@
 }
 .nav-list__ref{
     color: #1B1C21;
+    font-family: TTLakes-Medium, sans-serif;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
 }
 .nav-list__ref:hover {
     color: #7E7E82;
@@ -76,6 +92,12 @@
     margin-top: 1rem;
     margin-left: 1.5rem;
 }
+.footer__nav-mail-font {
+    color: #1B1C21;
+    font-family: TTLakes-Medium, sans-serif;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
 .footer__nav-lang-list {
     display: flex;
 }
@@ -87,6 +109,19 @@
 .footer__nav-lang {
     margin-top: 2.5rem;
     margin-bottom: 2rem;
+}
+.footer__nav-cn-font {
+    color: #1B1C21;
+    font-family: TTLakes-Bold, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+.footer__nav-lang-text {
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 .footer__nav-lang-text:hover {
     color: #7E7E82;
