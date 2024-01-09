@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "TTLakes-Medium";
+    font-family: "TT Lakes Medium";
     src:
             url("fonts/TTLakes-Medium.woff") format("woff"),
             url("fonts/TTLakes-Medium.eot") format("eot");
 }
 @font-face {
-    font-family: "TTLakes-Bold";
+    font-family: "TT Lakes Bold";
     src:
             url("/fonts/TTLakes-Bold.woff") format("woff"),
             url("/fonts/TTLakes-Bold.eot") format("eot");
@@ -25,7 +25,7 @@
 }
 .wrapper--dim {
     /*overflow-y: auto;*/
-    /*height: 100vh;*/
+    height: 100vh;
     max-width: 320px;
 }
 .header__nav {
@@ -55,17 +55,27 @@
 .header__logo {
     margin-right: 4.8rem;
 }
+.nav-list {
+    display: flex;
+    flex: 1 0 auto;
+}
 .nav-list__dim {
     margin-top: 3.16rem;
     margin-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 .nav-list__item:not(.nav-list__item:first-child) {
     margin-top: 2rem;
 }
-.nav-list__ref{
+.nav-list__ref,
+.footer__nav-mail-font,
+.footer__nav-lang-text {
     color: #1B1C21;
-    font-family: TTLakes-Medium, sans-serif;
-    line-height: 24px; /* 150% */
+    font-family: "TT Lakes Medium", sans-serif ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
     letter-spacing: -0.2px;
 }
 .nav-list__ref:hover {
@@ -81,7 +91,7 @@
     visibility: hidden;
 }
 .footer__nav {
-    margin-top: 16.7rem;
+    flex: 0 0 auto;
 }
 .footer__nav-bt {
     margin-right: 1rem;
@@ -91,12 +101,6 @@
 .footer__nav-lang {
     margin-top: 1rem;
     margin-left: 1.5rem;
-}
-.footer__nav-mail-font {
-    color: #1B1C21;
-    font-family: TTLakes-Medium, sans-serif;
-    line-height: 24px;
-    letter-spacing: -0.2px;
 }
 .footer__nav-lang-list {
     display: flex;
@@ -112,16 +116,14 @@
 }
 .footer__nav-cn-font {
     color: #1B1C21;
-    font-family: TTLakes-Bold, sans-serif;
+    font-family: "TT Lakes Bold", sans-serif;
     font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.6px;
 }
 .footer__nav-lang-text {
-    font-family: TTLakes-Medium, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
     display: inline-block;
     transition: transform 0.3s ease;
 }
